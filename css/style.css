@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+.logo-container {
+  float: left;
+  background: #000000;
+  width: 106px;
+  height: 80px;
+}
+.logo {
+  width: 66px;
+  height: 16px;
+  margin-left: 20px;
+  margin-top: 32px;
+}
+#navbar-container{
+  display: none;
+}
+#collapsible-navbar {
+  float: left;
+  height: 80px;
+  width: calc(100vw - 106px);
+}
+#collapsible-navbar ul { 
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+#collapsible-navbar li {
+  height: 100%;
+  border-left: solid 1px rgb(235, 228, 228);
+  width: 80px;
+  text-align: center;
+  position: relative;
+}
+#hamburger-bar {
+  padding-top: 20px;
+}
+#hamburger-bar div {
+  width: 30px;
+  height: 4px;
+  background-color: #f42;
+  margin: 6px auto;
+}
+#search svg {
+  margin-top: 32px;
+}
+.featured-message {
+  clear: both;
+  height: 76px;
+  width: 100vw;
+  background: #fd3;
+  line-height: 76px;
+  text-align: center;
+  box-shadow: 0 16px 48px rgba(0,0,0,.15);
+}
+.text-container {
+  margin: 10px 20px;
+  bottom: 0;
+  position: absolute;
+  width: calc(100% - 50px);
+  color: white;
+}
+#top-articles-container a {
+  text-decoration: none;
+}
+.top-articles {
+  height: 299px;
+  border: solid 5px black;
+  margin: 20px;
+  position: relative;
+}
+h1, h5, h6 { 
+  font-family: sans-serif;
+}
+#cat-date {
+  grid-area: 1 / 1;
+  background-image: linear-gradient(to bottom, rgba(120,122,120,0.38) 0%, rgba(100,100,100,0.45) 33%, rgba(0,0,0,1) 100%), url('../img/cat-date.jpg');
+  background-size: contain;
+}
+#annual-event {
+  grid-area: 2 / 1;
+  background-image: linear-gradient(to bottom, rgba(120,122,120,0.38) 0%, rgba(100,100,100,0.45) 33%, rgba(0,0,0,1) 100%), url('../img/annual-event.jpg');
+  background-size: contain;
+}
+#experts-wrong {
+  grid-area: 3 / 1;
+  background-image: linear-gradient(to bottom, rgba(120,122,120,0.38) 0%, rgba(100,100,100,0.45) 33%, rgba(0,0,0,1) 100%), url('../img/experts-wrong.jpg');
+  background-size: contain;
+}
+.article-categories-container a {
+  color: white;
+  text-decoration: none;
+}
+.article-categories-container .top-articles {
+  height: 402px;
+  background-image: url('../img/bitcoin_today-header_bitcoin_today-368x276.jpg');
+  background-size: cover;
+  border: none;
+  margin: 20px;
+  position: relative;
+  /* width: 50vw; */
+}
+h1, h3, h5, h6 { 
+  font-family: sans-serif;
+}
+.latest-container {
+  height: 96px;
+  background: lightpink;
+  display: grid;
+  grid-template-columns: 1fr 96px;
+  grid-template-rows: 10px 76px;
+  grid-gap: 10px;
+  margin: 0 20px;
+  /* margin: 20px; */
+  border: none;
+}
+.latest-container > h5,
+.latest-container > h3 {
+  padding: 20px;
+}
+.latest-container > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  grid-column: 2;
+  grid-row: 1 / 3;
+  z-index: 0;
+}
+.latest-container > h3,
+.latest-container > h5 {
+  grid-column: 1;
+  margin: 10px 20px;
+  font-size: 1em;
+}
+.article-categories-container ul {
+  /* background: lightblue; */
+  list-style: none;
+}
+.article-categories-container ul li {
+  border-bottom: solid 1px lightgray;
+}
+.article-categories-container ul li::before {
+  content: "• ";
+  color: red;
+}
+.article-categories-container ul li > a {
+  color: gray;
+}
