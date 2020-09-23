@@ -95,16 +95,47 @@ h1, h5, h6 {
   text-decoration: none;
 }
 .article-categories-container .top-articles {
-  height: 402px;
-  background-image: url('../img/bitcoin_today-header_bitcoin_today-368x276.jpg');
+  height: 400px;
   background-size: cover;
   border: none;
   margin: 20px;
   position: relative;
   /* width: 50vw; */
 }
+#hard-fork-image {
+  background-image: url('../img/bitcoin_today-header_bitcoin_today-368x276.jpg');
+}
+#apps-image {
+  background-image: url('../img/tiktok-513x270.png');
+}
+#gear-image {
+  background-image: url('../img/Chromecast-sabrina-368x276.jpg');
+}
+#tech-image {
+  background-image: url('../img/image-10-1-368x276.png');
+}
+#creative-image {
+  background-image: url('../img/card-v-card-bank-account-multiplayer-game-368x276.png');
+}
+#podium-image {
+  background-image: url('../img/data-540x270.jpg');
+}
+#insights-image {
+  background-image: url('../img/experts-wrong.jpg');
+}
+#launch-image {
+  background-image: url('../img/2-1-368x276.jpg');
+}
+#distract-image {
+  background-image: url('../img/hqdefault1.jpg');
+}
 h1, h3, h5, h6 { 
   font-family: sans-serif;
+}
+img.emoji {
+  display: inline;
+  height: 1em;
+  width: 1em;
 }
 .latest-container {
   height: 96px;
@@ -137,15 +168,19 @@ h1, h3, h5, h6 {
 }
 .article-categories-container ul {
   /* background: lightblue; */
-  list-style: none;
+  /* list-style:none; */
+  list-style-type: disc;
+  list-style-position: outside;
+  margin: 0 30px;
+  font-size: .8em;
+  font-family: sans-serif;
 }
 .article-categories-container ul li {
   border-bottom: solid 1px lightgray;
-}
-.article-categories-container ul li::before {
-  content: "• ";
   color: red;
+  line-height: 2;
 }
+
 .article-categories-container ul li > a {
   color: gray;
 }
