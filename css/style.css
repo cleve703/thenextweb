@@ -68,7 +68,6 @@
 }
 .top-articles {
   height: 299px;
-  /* border: solid 5px black; */
   margin: 20px;
   position: relative;
 }
@@ -100,7 +99,6 @@ h1, h5, h6 {
   border: none;
   margin: 20px 20px 5px 20px;
   position: relative;
-  /* width: 50vw; */
 }
 #hard-fork-image {
   background-image: url('../img/bitcoin_today-header_bitcoin_today-368x276.jpg');
@@ -137,8 +135,35 @@ img.emoji {
   height: 1em;
   width: 1em;
 }
-.latest-news {
-  margin: 10px 15px;
+.latest-news-bar {
+  margin: 10px 20px;
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  grid-row: 75px;
+  grid-gap: 5px;
+}
+.latest-news-bar > img {
+  grid-column: 1;
+  grid-row: 1;
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+}
+.news-bar-text {
+  grid-column: 2;
+  grid-row: 1;
+  display: block;
+}
+.news-bar-text h3, .deal-desc h3 {
+  font-family: sans-serif;
+  font-weight: 700;
+  margin: 5px 10px;
+}
+.news-bar-text h4 {
+  font-family: sans-serif;
+  font-weight: 300;
+  margin: 5px 10px;
+  color: gray;
 }
 .latest-container {
   height: 96px;
@@ -148,7 +173,6 @@ img.emoji {
   grid-template-rows: 10px 25px 51px;
   grid-gap: 7px;
   margin: 0 20px;
-  /* margin: 20px; */
   border: none;
 }
 article.latest-news img {
@@ -178,8 +202,6 @@ article.latest-news img {
 }
 
 .article-categories-container ul {
-  /* background: lightblue; */
-  /* list-style:none; */
   list-style-type: disc;
   list-style-position: outside;
   margin: 0 30px;
@@ -189,7 +211,9 @@ article.latest-news img {
 .article-categories-container ul li {
   border-bottom: solid 1px lightgray;
   color: red;
-  line-height: 2;
+  line-height: 1.5;
+  margin-top: 5px;
+  padding-bottom: 5px;
 }
 
 .article-categories-container ul li > a {
@@ -219,12 +243,15 @@ article.latest-news img {
   padding-top: 15px;
   font-family: sans-serif;
   color: white;
+  font-weight: 300;
+  font-size: 20px;
 }
 .lower-bar > h3 {
   padding-left: 110px;
   padding-top: 15px;
   margin: 0;
   font-family: sans-serif;
+  font-weight: 700;
 }
 h2 {
   margin-top: 25px;
@@ -243,8 +270,18 @@ h2 {
 .latest-funding h4 {
   margin-left: 110px;
   margin-top: 5px;
-  font-family: sans-serif;
+  font-family: Monda;
   font-weight: 300;
+  font-size: .75em;
+  color: gray;
+  text-transform: uppercase;
+}
+.latest-funding-container > h3 {
+  padding: 10px 0;
+}
+.latest-funding-container > h3 > a {
+  text-decoration: none;
+  color: #f42;
 }
 .inner-square img {
   height: 100%;
@@ -264,15 +301,126 @@ h2 {
 .whitespace-bottom {
     font-size: .8em;
     font-family: sans-serif;
-  }
-  .whitespace-bottom > p {
-    margin: 10px 25px;
+}
+.whitespace-bottom > p {
+  margin: 10px 25px;
 }
 .text-container {
   text-shadow: 1px 1px black;
+}
+.text-container h1 {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+.text-container h6 {
+  margin-top: 5px;
+  font-size: .75em;
+  color: lightgray
 }
 h5 {
   font-family: Monda, sans-serif;
   font-weight: 700;
   line-height: 2;
+}
+.latest-deals {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  grid-template-rows: 75px;
+  margin: 10px 20px;
+  grid-gap: 5px;
+}
+.deal-image img {
+  grid-column: 1;
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+}
+.deal-desc {
+  grid-column: 2;
+  font-size: .9em;
+}
+.old-price {
+  font-family: sans-serif;
+  color: gray;
+  text-decoration: line-through; 
+  font-size: .75em;
+  margin: 0 10px;
+}
+.deal-desc p {
+  margin-top: 10px;
+}
+.new-price {
+  font-family: sans-serif;
+  color: black;
+  font-size: 1em;
+  margin: 0;
+}
+footer {
+  text-align: center;
+}
+.footer-links-container {
+  height: 160px;
+  background: #131313;
+  padding: 35px;
+}
+.copyright-container {
+  height: 123px;
+  background: #000000;
+}
+.social-media-links-container li {
+  display: inline-block;
+  margin: 0 6px;
+  background: #333;
+  border-radius: 50%;
+  height: 40px;
+  padding: 12px;
+  width: 40px;
+}
+.company-links-container li {
+  padding: 32px 8px;
+  display: inline-block;
+  color: lightgray;
+  font-family: Monda;
+  font-size: 12px;
+}
+.icon {
+	display: block;
+	background: transparent url(../img/icons-sprite.svg) no-repeat;
+	background-size: 1296px 1296px;
+	background-position: 1296px 1296px;
+	width: 16px;
+	height: 16px;
+}
+.icon--facebook--light {
+  background-position: -272px -272px;
+}
+.icon--twitter--light {
+  background-position: -1024px -1024px;
+}
+.icon--youtube--light {
+  background-position: -1280px -1280px;
+}
+.icon--instagram--light {
+  background-position: -416px -416px;
+}
+.icon--pinterest--light {
+  background-position: -672px -672px;
+}
+.icon--rss--light {
+  background-position: -816px -816px;
+}
+.icon--mail--light {
+  background-position: -576px -576px;
+}
+.copyright-container {
+  color: white;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+.copyright-container img {
+  height: 12px;
+  width: auto;
+}
+.copyright-container p {
+  padding-top: 20px;
 }
