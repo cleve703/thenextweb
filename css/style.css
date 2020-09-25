@@ -16,12 +16,12 @@
 #navbar-container{
   display: none;
 }
-#collapsible-navbar {
+/* #collapsible-navbar {
   float: left;
   height: 80px;
   width: calc(100vw - 106px);
-}
-#collapsible-navbar ul { 
+} */
+/* #collapsible-navbar ul { 
   display: inline-flex;
   width: 100%;
   height: 100%;
@@ -34,8 +34,8 @@
   width: 80px;
   text-align: center;
   position: relative;
-}
-#hamburger-bar {
+} */
+/* #hamburger-bar {
   padding-top: 20px;
 }
 #hamburger-bar div {
@@ -43,6 +43,42 @@
   height: 4px;
   background-color: #f42;
   margin: 6px auto;
+}
+#search svg {
+  margin-top: 32px;
+} */
+#collapsible-navbar ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 106px 1fr 80px 80px;
+  grid-template-rows: 80px;
+}
+#collapsible-navbar li {
+  border-left: solid 1px rgb(235, 228, 228);
+}
+#hamburger-bar {
+  grid-area: 1 / 4;
+  padding-top: 20px;
+  width: 80px;
+}
+#hamburger-bar div {
+  width: 30px;
+  height: 4px;
+  background-color: #f42;
+  margin: 6px auto;
+}
+#logo {
+  grid-area: 1 / 1;
+  height: 80px;
+  width: 106px;
+  background: black;
+}
+#search {
+  width: 80px;
+  grid-area: 1 / 3;
+}
+#search svg {
+  border: none;
 }
 #search svg {
   margin-top: 32px;
