@@ -87,16 +87,19 @@ h1, h5, h6 {
   grid-area: 1 / 1;
   background-image: linear-gradient(to bottom, rgba(120,122,120,0.38) 0%, rgba(100,100,100,0.45) 33%, rgba(0,0,0,1) 100%), url('../img/cat-date.jpg');
   background-size: contain;
+  background-repeat: no-repeat;
 }
 #annual-event {
   grid-area: 2 / 1;
   background-image: linear-gradient(to bottom, rgba(120,122,120,0.38) 0%, rgba(100,100,100,0.45) 33%, rgba(0,0,0,1) 100%), url('../img/annual-event.jpg');
   background-size: contain;
+  background-repeat: no-repeat;
 }
 #experts-wrong {
   grid-area: 3 / 1;
   background-image: linear-gradient(to bottom, rgba(120,122,120,0.38) 0%, rgba(100,100,100,0.45) 33%, rgba(0,0,0,1) 100%), url('../img/experts-wrong.jpg');
   background-size: contain;
+  background-repeat: no-repeat;
 }
 .article-categories-container a {
   color: white;
