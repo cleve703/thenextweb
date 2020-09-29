@@ -1,1 +1,1 @@
-I created a clone of the front page from the website [theNextWeb](http://thenextweb.com), as an exercise in HTML/CSS responsive web design skills. Part of the full stack developer curriculum at [The Odin Project](http://theOdinProject.org).
+I created a clone of the front page from the website [theNextWeb](http://thenextweb.com), as an exercise in HTML/CSS responsive web design skills. Part of the full stack developer curriculum at [The Odin Project](http://theOdinProject.org). Learn more about my progress in the curriculum at [CodingCop.com](http://codingcop.com).
