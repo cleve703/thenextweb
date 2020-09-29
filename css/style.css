@@ -536,4 +536,46 @@ footer {
     margin-left: 10px;
     line-height: 50px;
   }
+  .top-articles {
+    margin: 0;
+    height: 100%;
+  }
+  #top-articles-container {
+    margin: 10px 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 244px 244px;
+    grid-gap: 10px;
+    overflow: hidden;
+  }
+  #cat-date-link {
+    grid-area: 1 / 1 / 3 / 2;
+    height: 100%;
+  }
+  #annual-event-link {
+    grid-area: 1 / 2 / 2 / 3;
+    height: 100%;
+    overflow: hidden;
+  }
+  #experts-wrong-link {
+    grid-area: 2 / 2 / 3 / 3;
+    height: 100%
+  }
+  #cat-date {
+    background-size: cover;
+  }
+  #annual-event-link {
+    background-size: cover;
+  }
+  #experts-wrong {
+    background-size: cover;
+  }
+  #top-articles-container h5 {
+    text-transform: uppercase;
+  }
+  #cat-date-link h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
 }
