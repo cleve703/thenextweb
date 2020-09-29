@@ -454,6 +454,11 @@ footer {
 .copyright-container p {
   padding-top: 20px;
 }
+@media only screen and (max-width: 532px) {
+  .featured-message {
+    font-size: 12px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .mobile-logo-container {
     display: none;
