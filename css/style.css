@@ -501,7 +501,7 @@ footer {
   #bot-right {
     height: 50px;
     width: 100%;
-    background: lightgray;
+    background: white;
     position: sticky;
     top: 0;
     z-index: 4;
@@ -533,8 +533,10 @@ footer {
   #bottom-nav ul li {
     float: left;
     font-family: Monda;
-    color: white;
-    margin-left: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #a9a9a9;
+    margin-left: 20px;
     line-height: 50px;
   }
   .top-articles {
@@ -581,8 +583,8 @@ footer {
   }
   #latest-news-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 232px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 232px);
   }
   .latest-news-bar {
     display: block;
@@ -598,6 +600,7 @@ footer {
     grid-gap: 10px;
   }
   .article-categories-supercontainer {
+    margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -613,5 +616,27 @@ footer {
   .deal-image img {
     width: 100%;
     height: 183px;
+  }
+  .copyright-container {
+    height: 98px;
+  }
+  .copyright-container p {
+    color: lightgray;
+    display: inline;
+    line-height: 98px;
+  }
+}
+@media only screen and (min-width: 1114px) {
+  #latest-news-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 232px);
+  }
+  .latest-news-bar {
+    display: block;
+  }
+  .latest-news-bar img {
+    width: 100%;
+    height: 116px;
   }
 }
