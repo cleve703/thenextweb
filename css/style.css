@@ -287,10 +287,10 @@ h2 {
   color: gray;
   text-transform: uppercase;
 }
-.latest-funding-container > h3 {
-  padding: 10px 0;
+#funding-links > li > h3 {
+  padding: 20px 0 0 20px;
 }
-.latest-funding-container > h3 > a {
+#funding-links > li > h3 > a {
   text-decoration: none;
   color: #f42;
 }
@@ -301,12 +301,13 @@ h2 {
 .whitespace-top, .whitespace-bottom {
   width: auto;
   line-height: 2;
+  background: #fffaf8;
 }
 .whitespace-top {
   border-bottom: solid 1px lightgray;
 }
 .whitespace-top > p {
-  margin: 10px 50px;
+  padding: 10px 50px;
   font-family: sans-serif;
 }
 .whitespace-bottom {
@@ -314,7 +315,7 @@ h2 {
     font-family: sans-serif;
 }
 .whitespace-bottom > p {
-  margin: 10px 25px;
+  padding: 10px 25px;
 }
 .text-container {
   text-shadow: 1px 1px black;
@@ -577,5 +578,40 @@ footer {
     font-size: 40px;
     line-height: 50px;
     margin-bottom: 20px;
+  }
+  #latest-news-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 232px);
+  }
+  .latest-news-bar {
+    display: block;
+  }
+  .latest-news-bar img {
+    width: 100%;
+    height: 116px;
+  }
+  .latest-funding-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 272px;
+    grid-gap: 10px;
+  }
+  .article-categories-supercontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .latest-deals-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 271px);
+    grid-gap: 10px;
+  }
+  .latest-deals {
+    display: block;
+  }
+  .deal-image img {
+    width: 100%;
+    height: 183px;
   }
 }
