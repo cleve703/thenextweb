@@ -101,13 +101,13 @@ h1, h5, h6 {
 }
 #annual-event {
   grid-area: 2 / 1;
-  background-image: linear-gradient(to bottom, rgba(120,122,120,0.38) 0%, rgba(100,100,100,0.45) 33%, rgba(0,0,0,1) 100%), url('../img/annual-event.jpg');
+  background-image: linear-gradient(to bottom, rgba(120,122,120,0.38) 0%, rgba(100,100,100,0.45) 33%, rgba(0,0,0,1) 100%), url('https://raw.githubusercontent.com/cleve703/thenextweb/master/img/annual-event.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 #experts-wrong {
   grid-area: 3 / 1;
-  background-image: linear-gradient(to bottom, rgba(120,122,120,0.38) 0%, rgba(100,100,100,0.45) 33%, rgba(0,0,0,1) 100%), url('../img/experts-wrong.jpg');
+  background-image: linear-gradient(to bottom, rgba(120,122,120,0.38) 0%, rgba(100,100,100,0.45) 33%, rgba(0,0,0,1) 100%), url('https://raw.githubusercontent.com/cleve703/thenextweb/master/img/experts-wrong.jpg');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -123,31 +123,31 @@ h1, h5, h6 {
   position: relative;
 }
 #hard-fork-image {
-  background-image: url('../img/bitcoin_today-header_bitcoin_today-368x276.jpg');
+  background-image: url('https://raw.githubusercontent.com/cleve703/thenextweb/master/img/bitcoin_today-header_bitcoin_today-368x276.jpg');
 }
 #apps-image {
-  background-image: url('../img/tiktok-513x270.png');
+  background-image: url('https://raw.githubusercontent.com/cleve703/thenextweb/master/img/tiktok-513x270.png');
 }
 #gear-image {
-  background-image: url('../img/Chromecast-sabrina-368x276.jpg');
+  background-image: url('https://raw.githubusercontent.com/cleve703/thenextweb/master/img/Chromecast-sabrina-368x276.jpg');
 }
 #tech-image {
-  background-image: url('../img/image-10-1-368x276.png');
+  background-image: url('https://raw.githubusercontent.com/cleve703/thenextweb/master/img/image-10-1-368x276.png');
 }
 #creative-image {
-  background-image: url('../img/card-v-card-bank-account-multiplayer-game-368x276.png');
+  background-image: url('https://raw.githubusercontent.com/cleve703/thenextweb/master/img/card-v-card-bank-account-multiplayer-game-368x276.png');
 }
 #podium-image {
-  background-image: url('../img/data-540x270.jpg');
+  background-image: url('https://raw.githubusercontent.com/cleve703/thenextweb/master/img/data-540x270.jpg');
 }
 #insights-image {
-  background-image: url('../img/experts-wrong.jpg');
+  background-image: url('https://raw.githubusercontent.com/cleve703/thenextweb/master/img/img/experts-wrong.jpg');
 }
 #launch-image {
-  background-image: url('../img/2-1-368x276.jpg');
+  background-image: url('https://raw.githubusercontent.com/cleve703/thenextweb/master/img//2-1-368x276.jpg');
 }
 #distract-image {
-  background-image: url('../img/hqdefault1.jpg');
+  background-image: url('https://raw.githubusercontent.com/cleve703/thenextweb/master/img/hqdefault1.jpg');
 }
 h1, h3, h5, h6 { 
   font-family: sans-serif;
@@ -400,7 +400,7 @@ footer {
 }
 .icon {
 	display: block;
-	background: transparent url(../img/icons-sprite.svg) no-repeat;
+	background: transparent url(https://raw.githubusercontent.com/cleve703/thenextweb/master/img/icons-sprite.svg) no-repeat;
 	background-size: 1296px 1296px;
 	background-position: 1296px 1296px;
 	width: 16px;
