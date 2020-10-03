@@ -95,7 +95,7 @@ h1, h5, h6 {
 }
 #cat-date {
   grid-area: 1 / 1;
-  background-image: linear-gradient(to bottom, rgba(120,122,120,0.38) 0%, rgba(100,100,100,0.45) 33%, rgba(0,0,0,1) 100%), url('./img/cat-date.JPG');
+  background-image: linear-gradient(to bottom, rgba(120,122,120,0.38) 0%, rgba(100,100,100,0.45) 33%, rgba(0,0,0,1) 100%), url('/img/cat-date.JPG');
   background-size: contain;
   background-repeat: no-repeat;
 }
